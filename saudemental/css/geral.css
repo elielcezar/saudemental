@@ -18,7 +18,7 @@ body{
 }    
 #principal img.img-responsive{margin: auto;}
 #principal a{ color: #f8af19; }
-#principal a:hover{color: #15488a;}
+#principal a:hover{color: #333;}
 #principal p{
 	font-size: 1em;
 	margin: 20px 0;
@@ -32,6 +32,10 @@ body{
 }
 
 /* titulos paginas */
+#principal h2{
+	color: #8c8c8c;
+}
+
 #principal h3{	
 	font-size: 2em;
 	color: #5c5c5c;
@@ -51,11 +55,12 @@ body{
 .titulo-pagina{		
 	float: left;
 	width: 100%;		
-	padding: 30px 0 35px 0;	
+	padding: 30px 0 35px 0;		
 }
 
 .titulo-pagina h1{
 	font-size: 3em;
+	color: #666;
 }
 
 
@@ -159,7 +164,8 @@ header{
 	float: left;
 	width: 100%;	
 	margin: 0;
-	padding: 20px 0;		
+	padding: 20px 0;	
+	border-bottom: 1px solid #ccc;	
 }
 header h1{
 	float: left;
@@ -180,6 +186,8 @@ header h1 a{
 header .contatos{	
 	width: 100%;
 	text-align: right;	
+	color: #8c8c8c;
+	margin-top: 7px;
 }
 
 /* menu */
@@ -196,18 +204,20 @@ header .navbar.navbar-default{
 	border-radius: 0;
 }
 
-header .navbar-nav{
-	width: 100%;
-}
+header .navbar-nav{	float: right;}
 
-header .navbar-nav li:hover{background: #f8af19;}
+header .navbar-nav li{
+	border-right: 1px solid #eee;
+	padding: 0 7px;
+}
 
 header .navbar-nav li a{		
 	padding: 15px 23px;
 	text-align: center;	
 	text-transform: uppercase; 
 }
-header .navbar-nav li:hover a{color: #fff !important;}
+
+header .navbar-nav li:hover a{color: #fff !important; background: #f8af19 !important;}
 
 
 /*--- HOME -------------------------------------------------------------------*/
@@ -216,6 +226,7 @@ header .navbar-nav li:hover a{color: #fff !important;}
 #topo-home{
 	background: #e3e3db;
 	border-bottom: 15px solid #fdd48f;	
+	height: 450px;
 }
 
 /*--- SOBRE ---*/
@@ -265,17 +276,42 @@ width: 25%;
 }
 
 /*--- EXTRAS ---*/
-#extras{min-height: 350px;}
-.curriculum{position: relative;}
-.curriculum .foto img{
+#extras{
+	padding: 50px 0;
+	min-height: 350px;
+}
+
+/* blog */
+#extras .view-blog-home .views-row{margin-bottom: 15px;}
+
+#extras .view-blog-home .views-row img{
+	border: 2px solid #ccc;
+}
+
+#extras .view-blog-home .views-row .titulo,
+#extras .view-blog-home .views-field-title{
+	font-size: 1.5em;
+	margin-bottom: 7px;
+}
+
+#extras .view-blog-home .views-row .data-criacao,
+#extras .view-blog-home .views-field-created{
+	margin-bottom: 7px;
+	color: #9a9a9a;
+	font-size: .92em;
+}
+
+/* curriculum*/
+#extras .curriculum{position: relative;}
+#extras .curriculum .foto img{
 	margin-top: 40px;
 	max-width: 115px;
 	position: relative;
 	z-index: 5;
 }
-.curriculum .info{
+#extras .curriculum .info{
 	border: 1px solid #ccc;
-	padding: 25px 25px 15px 100px;
+	padding: 25px 35px 25px 100px;
 	margin-left: 50px;
 	position: absolute;
 	right: 0;
@@ -315,23 +351,23 @@ width: 25%;
 	padding: 15px 0;
 	border-radius: 5px;
 }
-
-.page-blog .view-blog .views-row:hover{	
-	/*border: 3px solid #e0ecff;*/
-	background: #f2f7ff;
+.page-blog .view-blog .views-row:hover{		
+	background: #f9f9f9;
 }
-
-.page-blog .titulo-post{width: 100%;}
+.page-blog .titulo-post{
+	width: 100%;
+	margin-bottom: 15px;
+}
 .page-blog .titulo-post a{
 	font-size: 2.4em;	
-	font-family: 'Open Sans', sans-serif;	
-	font-weight: 800;	
+	font-family: 'Open Sans', sans-serif;		
 	letter-spacing: -1px;	
 }
-
 .page-blog .view-blog .data-post{
 	width: 100%;
 	padding-bottom: 10px;
+	color: #9a9a9a;	
+	margin-bottom: 15px;
 }
 .page-blog .view-blog .chamada-post{width: 100%;}
 
@@ -395,10 +431,10 @@ width: 25%;
 	font-size: 52px;
 	line-height: 52px;
 	margin: 5px 0;
-	letter-spacing: -2px;	
+	letter-spacing: -1px;	
 	font-family: 'Open Sans', sans-serif;
-	color: #3a99d3;
-	font-weight: 800;	
+	color: #f8af19;
+	font-weight: 400;	
 }
 .node-type-article .views-field-field-chamada{
 	color: #646464;
@@ -602,6 +638,7 @@ footer{
 	padding: 25px 0;	
 	text-align: right;	
 	font-size: .85em;
+	color: #8c8c8c;
 }
 footer a{font-weight: bold;	}
 

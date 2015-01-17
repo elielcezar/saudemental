@@ -39,7 +39,7 @@
     <div class="container">           
           
           
-             <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/topo-home.jpg" class="img-responsive aba"/>
+             
          
         
      </div><!-- / CONTAINER-->
@@ -100,7 +100,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <h3>Blog</h3>
+        <h3>Blog</h3>        
         <?php print views_embed_view('blog_home', 'block_1'); ?>
       </div>
       <div class="col-sm-6">
@@ -108,7 +108,7 @@
         <div class="curriculum">          
           <div class="foto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/sarah_ruckl.png" class="img-circle im-responsive" /></div>
           <div class="info">
-            <p>Maecenas etos sit amet, consectetur adipiscing elit. Terminal volutpat rutrum metro amet sollicitudin interdum. Suspendisse pulvinar, velit etos pharetra interdum, ante tellus gravida mollis tellus neque vitae elit. Mauris adipiscing mauris fringilla turpis interdum pulvinar nisi malesuada, consectetur adipiscing libero est cuprum.</p>
+            <p>A Clínica de Saúde Mental da Mulher é coordenada pela <strong>Dra Sarah Rückl</strong>, médica psiquiatra, especialista em Psiquiatria pela Associação Brasileira de Psiquiatria e Doutora em Psiquiatria pela Universidade de Heidelberg, Alemanha.</p>
           </div>
         </div>
       </div>
@@ -142,44 +142,6 @@
    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="<?php print base_path() . path_to_theme() .'/' ?>/js/bootstrap.js" type="text/javascript"></script>
-<script src="<?php print base_path() . path_to_theme() .'/' ?>/js/jquery.nicescroll.min.js" type="text/javascript" ></script>
-<script src="<?php print base_path() . path_to_theme() .'/' ?>/js/jquery.parallax-1.1.3.j" type="text/javascript" ></script>
-<script src="<?php print base_path() . path_to_theme() .'/' ?>/js/jquery.localscroll-1.2.7-min.js" type="text/javascript" ></script>
-<script src="<?php print base_path() . path_to_theme() .'/' ?>/js/jquery.scrollTo-1.4.6-min.js" type="text/javascript" ></script>
-
-  
 
 <script src="<?php echo $directory; ?>/js/geral.js" type="text/javascript"></script>
 
-<script>
-jQuery(document).ready(function(){
-	jQuery('#topnav').localScroll({offset: {top:0}});
-
-  jQuery('.seta').localScroll({offset: {top:0}});
-
-	jQuery('#Section-1').parallax("90%", 1);
-	jQuery('#Section-2').parallax("1%", 1);
-	jQuery('#Section-3').parallax("90%", 1);
-  jQuery('#Section-4').parallax("1%", 1);
-  jQuery('#Section-5').parallax("200%", 1);
-  jQuery('#Section-6').parallax("1%", 1);
-
-
-})
-</script>
-<!-- NICE Scroll plugin -->
-
-<script>
-//scroll bar custom
-	jQuery(document).ready(
-  function() {  
-    jQuery("html").niceScroll({cursorcolor:"#fff"});
-  }
-);
-</script>
-
-
-<script src="<?php print base_path() . path_to_theme() .'/' ?>/js/jquery.inview.js"></script>
- <!--[if !IE]><!-->
-<script src="<?php print base_path() . path_to_theme() .'/' ?>/js/custom_inview.js"></script>
-<!--<![endif]--> 
